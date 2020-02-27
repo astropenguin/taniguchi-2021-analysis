@@ -1,5 +1,6 @@
 # User-defined
 large/
+temp/
 .vscode/
 .envrc
 .env
