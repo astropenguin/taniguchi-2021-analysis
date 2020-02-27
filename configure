@@ -22,8 +22,13 @@ direnv allow .
 cat << EOS >> .env
 DATA_PATH=${PWD}/data
 PRODUCTS_PATH=${PWD}/products
+PYTHONPATH=${PWD}
 PYTHONSTARTUP=${PWD}/startup.py
 EOS
+
+cp .env .env.bak
+sort .env.bak | uniq - .env
+rm .env.bak
 
 
 # set VS Code settings
