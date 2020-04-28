@@ -11,3 +11,4 @@
 | Note no. | Data | Products | Has plots? | Description |
 | --- | --- | --- | --- | --- |
 | [2020-02-26](notes/2020-02-26) | PJ020941.3 | n/a | yes | GoDec（のバリエーション）を使ってON-Rの操作からノイズ除去と強度較正を試した。Sparseを求める際、メジアンフィルターを使って周波数方向にTVに対応する操作を行ったら上手くいった。本物のTVを入れても良いかもしれない。 |
+| [2020-04-27](notes/2020-04-27) | n/a | n/a | yes | 論文用のL+S decompositionとGoDec algorithmの概念図を作成した。 |
