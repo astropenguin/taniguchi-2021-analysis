@@ -79,7 +79,7 @@ def bin_channels(T_cal, size=2):
     return T_cal_bin
 
 
-def estimate_baseline(T_cal, order=1, weight=None):
+def estimate_baseline(T_cal, order=1, weight=1.0):
     """Estimate polynomial baseline of each sample."""
     freq = T_cal.ch - T_cal.ch.mean()
     n_freq, n_poly = len(freq), order + 1
@@ -95,7 +95,7 @@ def estimate_baseline(T_cal, order=1, weight=None):
 
     # estimate coeffs by solving linear regression problem
     model = LinearRegression(fit_intercept=False)
-    model.fit(X, y, sample_weight=weight or 1.0)
+    model.fit(X, y, sample_weight=weight)
 
     # estimate baseline
     T_base = xr.full_like(T_cal, model.coef_ @ X.T)
