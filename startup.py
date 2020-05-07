@@ -4,6 +4,7 @@
 import os
 import re
 import sys
+from functools import wraps
 from pathlib import Path
 
 # dependent packages
@@ -14,6 +15,15 @@ import xarray as xr
 import matplotlib.pyplot as plt
 from jupyter_io import savefig_in_notebook
 from tqdm import tqdm
+
+
+# decorators
+def dataarray_func(func):
+    @wraps(func)
+    def wrapped(da, *args, **kwargs):
+        return xr.zeros_like(da) + func(da, *args, **kwargs)
+
+    return wrapped
 
 
 # special path objects
