@@ -21,7 +21,10 @@ from tqdm import tqdm
 def dataarray_func(func):
     @wraps(func)
     def wrapped(da, *args, **kwargs):
-        return xr.zeros_like(da) + func(da, *args, **kwargs)
+        if not isinstance(da, xr.DataArray):
+            return func(da, *args, **kwargs)
+
+        return xr.zeros_like(da) + func(da.values, *args, **kwargs)
 
     return wrapped
 
