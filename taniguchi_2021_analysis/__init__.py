@@ -1,5 +1,7 @@
-# flake8: noqa
+__author__ = "Akio Taniguchi"
+__version__ = "0.1.0"
 
 
-# subpackages
-from . import b4r
+# submodules
+from .io import *
+from .models import *
