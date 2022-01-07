@@ -1,7 +1,7 @@
 # taniguchi-2021-analysis
 Analysis repository for Taniguchi et al. 2021, AJ, 162, 111
 
-## How to use
+## Overview
 
 This repository contains Jupyter notebooks (`notes/*`) and a Python package (`taniguchi_2021_analysis`).
 It does **not** contain any observed datasets; please contact the corresponding author to get them.
