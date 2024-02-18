@@ -30,6 +30,7 @@ xarray = ">=2023.7, <2025.0"
 black = "^24.2"
 ipython = "^8.18"
 jupyter = "^1.0"
+jupyter-io = "^0.2"
 matplotlib = "^3.7"
 netcdf4 = "^1.6"
 
