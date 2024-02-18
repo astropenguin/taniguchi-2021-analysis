@@ -1264,6 +1264,22 @@ docs = ["jupyterlite-sphinx", "myst-parser", "pydata-sphinx-theme", "sphinxcontr
 test = ["click", "pre-commit", "pytest (>=7.0)", "pytest-asyncio (>=0.19.0)", "pytest-console-scripts", "rich"]
 
 [[package]]
+name = "jupyter-io"
+version = "0.2.0"
+description = "Python pakcage of some I/O utilities for Jupyter notebook"
+optional = false
+python-versions = ">=3.6,<4.0"
+files = [
+    {file = "jupyter-io-0.2.0.tar.gz", hash = "sha256:7a33da649ea64e33644c7e78a3b2aa13c27c8d20c8912fe8e06b1f254be74de8"},
+    {file = "jupyter_io-0.2.0-py3-none-any.whl", hash = "sha256:e7fd3b8104f63e819c4c87ce02b57a26c72d7f37c3386eb7df6b864e55bc151c"},
+]
+
+[package.dependencies]
+ipython = ">=5.5"
+matplotlib = ">=3.1,<4.0"
+pandas = ">=0.25"
+
+[[package]]
 name = "jupyter-lsp"
 version = "2.2.2"
 description = "Multi-Language Server WebSocket proxy for Jupyter Notebook/Lab server"
@@ -3182,4 +3198,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9, <3.13"
-content-hash = "7168bb319cbbdb52180843958f213730980b370455d88ebf3b31fd4487c9979b"
+content-hash = "283f4c883ef3bf3b0a210489b3ba89a573343979e65f774ff9a7c71651982c43"
