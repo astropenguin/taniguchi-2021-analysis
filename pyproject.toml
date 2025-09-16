@@ -1,6 +1,6 @@
 [project]
 name = "taniguchi-2021-analysis"
-version = "0.1.0"
+version = "1.0.0"
 description = "Analysis repository for Taniguchi et al. 2021, AJ, 162, 111"
 readme = "README.md"
 keywords = [
