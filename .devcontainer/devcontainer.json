@@ -1,19 +1,16 @@
 {
     "name": "taniguchi-2021-analysis",
-    "image": "python:3.12",
+    "image": "ghcr.io/astral-sh/uv:python3.12-bookworm",
     "runArgs": [
         "--name=taniguchi-2021-analysis"
     ],
     "containerEnv": {
-        "POETRY_VIRTUALENVS_CREATE": "false"
+        "UV_PROJECT_ENVIRONMENT": "/usr/local"
     },
-    "onCreateCommand": "pip install poetry==1.7.1",
-    "postCreateCommand": "poetry install",
+    "postCreateCommand": "uv sync --frozen",
     "customizations": {
         "vscode": {
             "extensions": [
-                "github.vscode-pull-request-github",
-                "mhutchie.git-graph",
                 "ms-python.black-formatter",
                 "ms-python.python",
                 "ms-toolsai.jupyter",
@@ -23,12 +20,10 @@
             "settings": {
                 "files.insertFinalNewline": true,
                 "files.trimTrailingWhitespace": true,
+                "python.languageServer": "Pylance",
                 "[python]": {
                     "editor.defaultFormatter": "ms-python.black-formatter",
-                    "editor.formatOnSave": true,
-                    "editor.insertSpaces": true,
-                    "editor.tabSize": 4,
-                    "python.languageServer": "Pylance"
+                    "editor.formatOnSave": true
                 }
             }
         }

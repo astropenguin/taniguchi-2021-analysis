@@ -21,8 +21,8 @@ Data | LMT ID | Description
 --- | --- | ---
 xffts_20191126051026_086889_01.nc | 86889 | XFFTS spectra of a hot-load measurement for LMT ID 86890.
 xffts_20191126051059_086890_01.nc | 86890 | XFFTS spectra of a CO(4-3) observation of PJ020941.3.
-xffts_20191126055343_086895_01.nc | 86895 | XFFTS spectra of a hot-load measurement for LMT ID 86896.
-xffts_20191126055417_086896_01.nc | 86896 | XFFTS spectra of a CO(5-4) observation of PJ020941.3.
+xffts_20191126055343_086895_02.nc | 86895 | XFFTS spectra of a hot-load measurement for LMT ID 86896.
+xffts_20191126055417_086896_02.nc | 86896 | XFFTS spectra of a CO(5-4) observation of PJ020941.3.
 lmttpm_20191126_086889_00_01.nc | 86889 | LMT telescope log.
 lmttpm_20191126_086890_00_01.nc | 86890 | LMT telescope log.
 lmttpm_20191126_086895_00_01.nc | 86895 | LMT telescope log.
